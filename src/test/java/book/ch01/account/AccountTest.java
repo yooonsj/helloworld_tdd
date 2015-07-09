@@ -1,4 +1,4 @@
-package account;
+package book.ch01.account;
 
 import org.junit.Before;
 import org.junit.Test;

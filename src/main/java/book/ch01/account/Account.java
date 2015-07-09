@@ -1,4 +1,4 @@
-package account;
+package book.ch01.account;
 
 /**
  * Created by ci on 2015-06-30.

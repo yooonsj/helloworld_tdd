@@ -1,4 +1,4 @@
-package bbgame;
+package sample.bbgame;
 
 /**
  * Created by ci on 2015-06-29.

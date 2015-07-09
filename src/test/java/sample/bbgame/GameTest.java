@@ -1,4 +1,4 @@
-package bbgame;
+package sample.bbgame;
 
 import org.junit.Before;
 import org.junit.Test;
