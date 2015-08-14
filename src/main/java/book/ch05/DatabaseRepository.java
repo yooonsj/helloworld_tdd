@@ -26,7 +26,7 @@ public class DatabaseRepository implements Repository {
         Seller seller = null;
 
         try {
-            String query = "SELECT ID, name, email FROM SELLER WHERE ID = ?";
+            String query = "SELECT id, name, email FROM SELLER WHERE id = ?";
 
             stmt = conn.prepareStatement(query);
             stmt.setString(1, id);
