@@ -28,7 +28,7 @@ public class DatabaseRepositoryTest {
     private final String password = "1234";
 
     private IDatabaseTester databaseTester;
-    private String path = "/Users/Sangjun/Development/TDD/helloworld_tdd/src/test/java/book/ch05";
+    private String path = System.getProperty("user.dir") + "/src/test/resources/book/ch05";
     @Before
     public void setUp() throws Exception{
         databaseTester = new JdbcDatabaseTester(driver, url + dbName, id, password);
@@ -51,7 +51,7 @@ public class DatabaseRepositoryTest {
         ITable actualTable = currentDBdataSet.getTable("SELLER");
         IDataSet expectedDataSet = new FlatXmlDataSetBuilder().build(new File(path, "expected_seller.xml"));
         ITable expectedTable = expectedDataSet.getTable("SELLER");
-        Assertion.assertEquals(new SortedTable(expectedTable), actualTable);
+        Assertion.assertEquals(new SortedTable(expectedTable), new SortedTable(actualTable));
     }
 
     @Test
